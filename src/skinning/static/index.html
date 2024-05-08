@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="static/main.css" />
+    <title>WebGL - Terrain Simlutaion</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="position: absolute; left: -550px; top: 0px;">Terrain Simlutaion</h1>
+
+      <button id="SetNormalButton" class="button" style="position: absolute; left: -550px; top: 100px;">Toggle [Normal Mapping]</button>
+      
+      <button id="SetShadowButton" class="button" style="position: absolute; left: -550px; top: 150px;">Toggle [Shadow Mapping]</button>
+      
+      <canvas id="glCanvas" class="card" width="1200" height="850">
+        Your browser does not support HTML5 </canvas
+      >
+
+      <canvas id="textCanvas" width="800" height="800">
+        Your browser does not support HTML5 </canvas
+      >
+
+      <div style="position: absolute; left: -550px; top: 200px;">
+        <label for="initsubdivision"  style="display: block;">Level of Initial Number of Meshes:</label>
+        <input type="range" id="initsubdivision" min="0" max="7" value="3">
+        <span id="initsubdivisionValue" style="display: inline-block;">16384</span>
+      </div>
+
+      <div style="position: absolute; left: -550px; top: 250px;">
+        <label for="ValueNoiseHeight" style="display: block;">Max. Value Noise Height:</label>
+        <input type="range" id="ValueNoiseHeight" min="0" max="100" value="20">
+        <span id="ValueNoiseHeightValue" style="display: inline-block;">20</span>
+      </div>
+      
+      <div style="position: absolute; left: -550px; top: 300px;">
+        <label for="TerrainSize" style="display: block;">Size of Terrain:</label>
+        <input type="range" id="TerrainSize" min="90" max="270" value="90">
+        <span id="TerrainSizeValue" style="display: inline-block;">90</span>
+      </div>
+
+      <div style="position: absolute; left: -550px; top: 350px;">
+        <label for="maxDispHeight" style="display: block;">Max. Displacement Height:</label>
+        <input type="range" id="maxDispHeight" min="0" max="30" value="6">
+        <span id="maxDispHeightValue" style="display: inline-block;">6</span>
+      </div>
+
+
+      <button id="LoopSubdivision" class="button" style="position: absolute; left: -550px; top: 400px;">Loop Subdivision</button>
+    </div>
+    <br />
+<script type="module" src="./index.js"></script>
+
+    <br />
+  </body>
+</html>

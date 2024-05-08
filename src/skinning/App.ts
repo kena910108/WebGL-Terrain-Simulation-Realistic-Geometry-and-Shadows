@@ -108,7 +108,7 @@ export class SkinningAnimation extends CanvasAnimation {
 
     this.gui = new GUI(this.canvas2d, this);
     this.lightPosition = new Vec4([0, 300, 0, 1]);
-    this.backgroundColor = new Vec4([0.0, 0.37254903, 0.37254903, 1.0]);
+    this.backgroundColor = new Vec4([135.0/255.0, 206.0/255.0, 235.0/255.0, 1.0]);
 
     this.initFloor();
     

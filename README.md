@@ -40,6 +40,7 @@ The project is built on WebGL 2.0 and leverages Value Noise to generate terrain 
 - Value Noise Height Setting: This determines the foundational height of the terrain, independent of any modifications made by the displacement map.
 - Maximum Displacement Height: Increasing this value can give the terrain a rockier appearance; however, it may also introduce more visual artifacts. Applying Loop Subdivision can help smooth out the terrain when artifacts become apparent.
 - Loop Subdivision: Loop Subdivision: This feature smooths the shape of the terrain. Each application quadruples the number of meshes.
+- Note: Applying subdivision twice can help enhancing the quality.
 
 ### Issues
 - This project has been tested on Safari. When using Chrome, shadow mapping may exhibit issues due to limited precision support for WebGL depth maps.

@@ -128,7 +128,7 @@ export class RenderPass {
             gl.useProgram(null);
             gl.bindVertexArray(null);
           }
-          img.src = "/static/assets/skinning/" + this.textureMap[i];
+          img.src = "/static/assets/terrain/" + this.textureMap[i];
           
         }
       }
